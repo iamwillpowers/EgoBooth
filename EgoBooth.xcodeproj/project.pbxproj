@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDCB76C8263C00D400709455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB76C7263C00D400709455 /* AppDelegate.swift */; };
+		CDCB76CF263C00D400709455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCB76CD263C00D400709455 /* Main.storyboard */; };
+		CDCB76D4263C00D400709455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCB76D2263C00D400709455 /* LaunchScreen.storyboard */; };
+		CDCB76DF263C00D400709455 /* EgoBoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB76DE263C00D400709455 /* EgoBoothTests.swift */; };
+		CDCB76EA263C00D400709455 /* EgoBoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB76E9263C00D400709455 /* EgoBoothUITests.swift */; };
+		CDCB7707263C012700709455 /* edgehighlights.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB76F8263C012700709455 /* edgehighlights.fsh */; };
+		CDCB7708263C012700709455 /* infrared.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB76F9263C012700709455 /* infrared.fsh */; };
+		CDCB7709263C012700709455 /* points.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB76FA263C012700709455 /* points.fsh */; };
+		CDCB770A263C012700709455 /* delirium.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB76FB263C012700709455 /* delirium.fsh */; };
+		CDCB770B263C012700709455 /* reflect.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB76FC263C012700709455 /* reflect.fsh */; };
+		CDCB770C263C012700709455 /* crt.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB76FD263C012700709455 /* crt.fsh */; };
+		CDCB770D263C012700709455 /* passThrough.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB76FE263C012700709455 /* passThrough.vsh */; };
+		CDCB770E263C012700709455 /* lighttunnel.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB76FF263C012700709455 /* lighttunnel.fsh */; };
+		CDCB770F263C012700709455 /* edge.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB7700263C012700709455 /* edge.fsh */; };
+		CDCB7710263C012700709455 /* antifisheye.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB7701263C012700709455 /* antifisheye.fsh */; };
+		CDCB7711263C012700709455 /* fisheye.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB7702263C012700709455 /* fisheye.fsh */; };
+		CDCB7712263C012700709455 /* radialblur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB7703263C012700709455 /* radialblur.fsh */; };
+		CDCB7713263C012700709455 /* matrix.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CDCB7704263C012700709455 /* matrix.fsh */; };
+		CDCB7714263C012700709455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB7705263C012700709455 /* ViewController.swift */; };
+		CDCB7715263C012700709455 /* CameraFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB7706263C012700709455 /* CameraFeed.swift */; };
+		CDCB7717263C01B900709455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCB7716263C01B900709455 /* Assets.xcassets */; };
+		CDCB7719263C79CA00709455 /* GlitchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB7718263C79CA00709455 /* GlitchTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDCB76DB263C00D400709455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDCB76BC263C00D400709455 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDCB76C3263C00D400709455;
+			remoteInfo = EgoBooth;
+		};
+		CDCB76E6263C00D400709455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDCB76BC263C00D400709455 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDCB76C3263C00D400709455;
+			remoteInfo = EgoBooth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDCB76C4263C00D400709455 /* EgoBooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EgoBooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCB76C7263C00D400709455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDCB76CE263C00D400709455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDCB76D3263C00D400709455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDCB76D5263C00D400709455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCB76DA263C00D400709455 /* EgoBoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EgoBoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCB76DE263C00D400709455 /* EgoBoothTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgoBoothTests.swift; sourceTree = "<group>"; };
+		CDCB76E0263C00D400709455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCB76E5263C00D400709455 /* EgoBoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EgoBoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCB76E9263C00D400709455 /* EgoBoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgoBoothUITests.swift; sourceTree = "<group>"; };
+		CDCB76EB263C00D400709455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCB76F8263C012700709455 /* edgehighlights.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = edgehighlights.fsh; sourceTree = "<group>"; };
+		CDCB76F9263C012700709455 /* infrared.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = infrared.fsh; sourceTree = "<group>"; };
+		CDCB76FA263C012700709455 /* points.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = points.fsh; sourceTree = "<group>"; };
+		CDCB76FB263C012700709455 /* delirium.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = delirium.fsh; sourceTree = "<group>"; };
+		CDCB76FC263C012700709455 /* reflect.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = reflect.fsh; sourceTree = "<group>"; };
+		CDCB76FD263C012700709455 /* crt.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = crt.fsh; sourceTree = "<group>"; };
+		CDCB76FE263C012700709455 /* passThrough.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = passThrough.vsh; sourceTree = "<group>"; };
+		CDCB76FF263C012700709455 /* lighttunnel.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighttunnel.fsh; sourceTree = "<group>"; };
+		CDCB7700263C012700709455 /* edge.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = edge.fsh; sourceTree = "<group>"; };
+		CDCB7701263C012700709455 /* antifisheye.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = antifisheye.fsh; sourceTree = "<group>"; };
+		CDCB7702263C012700709455 /* fisheye.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fisheye.fsh; sourceTree = "<group>"; };
+		CDCB7703263C012700709455 /* radialblur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = radialblur.fsh; sourceTree = "<group>"; };
+		CDCB7704263C012700709455 /* matrix.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = matrix.fsh; sourceTree = "<group>"; };
+		CDCB7705263C012700709455 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDCB7706263C012700709455 /* CameraFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFeed.swift; sourceTree = "<group>"; };
+		CDCB7716263C01B900709455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDCB7718263C79CA00709455 /* GlitchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlitchTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDCB76C1263C00D400709455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB76D7263C00D400709455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB76E2263C00D400709455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDCB76BB263C00D400709455 = {
+			isa = PBXGroup;
+			children = (
+				CDCB76C6263C00D400709455 /* EgoBooth */,
+				CDCB76DD263C00D400709455 /* EgoBoothTests */,
+				CDCB76E8263C00D400709455 /* EgoBoothUITests */,
+				CDCB76C5263C00D400709455 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDCB76C5263C00D400709455 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB76C4263C00D400709455 /* EgoBooth.app */,
+				CDCB76DA263C00D400709455 /* EgoBoothTests.xctest */,
+				CDCB76E5263C00D400709455 /* EgoBoothUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDCB76C6263C00D400709455 /* EgoBooth */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB76C7263C00D400709455 /* AppDelegate.swift */,
+				CDCB7706263C012700709455 /* CameraFeed.swift */,
+				CDCB7705263C012700709455 /* ViewController.swift */,
+				CDCB7718263C79CA00709455 /* GlitchTableViewController.swift */,
+				CDCB76CD263C00D400709455 /* Main.storyboard */,
+				CDCB76D2263C00D400709455 /* LaunchScreen.storyboard */,
+				CDCB76D5263C00D400709455 /* Info.plist */,
+				CDCB7716263C01B900709455 /* Assets.xcassets */,
+				CDCB76F7263C012700709455 /* Shaders */,
+			);
+			path = EgoBooth;
+			sourceTree = "<group>";
+		};
+		CDCB76DD263C00D400709455 /* EgoBoothTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB76DE263C00D400709455 /* EgoBoothTests.swift */,
+				CDCB76E0263C00D400709455 /* Info.plist */,
+			);
+			path = EgoBoothTests;
+			sourceTree = "<group>";
+		};
+		CDCB76E8263C00D400709455 /* EgoBoothUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB76E9263C00D400709455 /* EgoBoothUITests.swift */,
+				CDCB76EB263C00D400709455 /* Info.plist */,
+			);
+			path = EgoBoothUITests;
+			sourceTree = "<group>";
+		};
+		CDCB76F7263C012700709455 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB76F8263C012700709455 /* edgehighlights.fsh */,
+				CDCB76F9263C012700709455 /* infrared.fsh */,
+				CDCB76FA263C012700709455 /* points.fsh */,
+				CDCB76FB263C012700709455 /* delirium.fsh */,
+				CDCB76FC263C012700709455 /* reflect.fsh */,
+				CDCB76FD263C012700709455 /* crt.fsh */,
+				CDCB76FE263C012700709455 /* passThrough.vsh */,
+				CDCB76FF263C012700709455 /* lighttunnel.fsh */,
+				CDCB7700263C012700709455 /* edge.fsh */,
+				CDCB7701263C012700709455 /* antifisheye.fsh */,
+				CDCB7702263C012700709455 /* fisheye.fsh */,
+				CDCB7703263C012700709455 /* radialblur.fsh */,
+				CDCB7704263C012700709455 /* matrix.fsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDCB76C3263C00D400709455 /* EgoBooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCB76EE263C00D400709455 /* Build configuration list for PBXNativeTarget "EgoBooth" */;
+			buildPhases = (
+				CDCB76C0263C00D400709455 /* Sources */,
+				CDCB76C1263C00D400709455 /* Frameworks */,
+				CDCB76C2263C00D400709455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EgoBooth;
+			productName = EgoBooth;
+			productReference = CDCB76C4263C00D400709455 /* EgoBooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDCB76D9263C00D400709455 /* EgoBoothTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCB76F1263C00D400709455 /* Build configuration list for PBXNativeTarget "EgoBoothTests" */;
+			buildPhases = (
+				CDCB76D6263C00D400709455 /* Sources */,
+				CDCB76D7263C00D400709455 /* Frameworks */,
+				CDCB76D8263C00D400709455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDCB76DC263C00D400709455 /* PBXTargetDependency */,
+			);
+			name = EgoBoothTests;
+			productName = EgoBoothTests;
+			productReference = CDCB76DA263C00D400709455 /* EgoBoothTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDCB76E4263C00D400709455 /* EgoBoothUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCB76F4263C00D400709455 /* Build configuration list for PBXNativeTarget "EgoBoothUITests" */;
+			buildPhases = (
+				CDCB76E1263C00D400709455 /* Sources */,
+				CDCB76E2263C00D400709455 /* Frameworks */,
+				CDCB76E3263C00D400709455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDCB76E7263C00D400709455 /* PBXTargetDependency */,
+			);
+			name = EgoBoothUITests;
+			productName = EgoBoothUITests;
+			productReference = CDCB76E5263C00D400709455 /* EgoBoothUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDCB76BC263C00D400709455 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CDCB76C3263C00D400709455 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					CDCB76D9263C00D400709455 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CDCB76C3263C00D400709455;
+					};
+					CDCB76E4263C00D400709455 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CDCB76C3263C00D400709455;
+					};
+				};
+			};
+			buildConfigurationList = CDCB76BF263C00D400709455 /* Build configuration list for PBXProject "EgoBooth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDCB76BB263C00D400709455;
+			productRefGroup = CDCB76C5263C00D400709455 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDCB76C3263C00D400709455 /* EgoBooth */,
+				CDCB76D9263C00D400709455 /* EgoBoothTests */,
+				CDCB76E4263C00D400709455 /* EgoBoothUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDCB76C2263C00D400709455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB770D263C012700709455 /* passThrough.vsh in Resources */,
+				CDCB770A263C012700709455 /* delirium.fsh in Resources */,
+				CDCB770F263C012700709455 /* edge.fsh in Resources */,
+				CDCB76D4263C00D400709455 /* LaunchScreen.storyboard in Resources */,
+				CDCB7709263C012700709455 /* points.fsh in Resources */,
+				CDCB7711263C012700709455 /* fisheye.fsh in Resources */,
+				CDCB7707263C012700709455 /* edgehighlights.fsh in Resources */,
+				CDCB7708263C012700709455 /* infrared.fsh in Resources */,
+				CDCB770B263C012700709455 /* reflect.fsh in Resources */,
+				CDCB7712263C012700709455 /* radialblur.fsh in Resources */,
+				CDCB7713263C012700709455 /* matrix.fsh in Resources */,
+				CDCB76CF263C00D400709455 /* Main.storyboard in Resources */,
+				CDCB770E263C012700709455 /* lighttunnel.fsh in Resources */,
+				CDCB770C263C012700709455 /* crt.fsh in Resources */,
+				CDCB7717263C01B900709455 /* Assets.xcassets in Resources */,
+				CDCB7710263C012700709455 /* antifisheye.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB76D8263C00D400709455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB76E3263C00D400709455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDCB76C0263C00D400709455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB7715263C012700709455 /* CameraFeed.swift in Sources */,
+				CDCB7714263C012700709455 /* ViewController.swift in Sources */,
+				CDCB76C8263C00D400709455 /* AppDelegate.swift in Sources */,
+				CDCB7719263C79CA00709455 /* GlitchTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB76D6263C00D400709455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB76DF263C00D400709455 /* EgoBoothTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB76E1263C00D400709455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB76EA263C00D400709455 /* EgoBoothUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDCB76DC263C00D400709455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDCB76C3263C00D400709455 /* EgoBooth */;
+			targetProxy = CDCB76DB263C00D400709455 /* PBXContainerItemProxy */;
+		};
+		CDCB76E7263C00D400709455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDCB76C3263C00D400709455 /* EgoBooth */;
+			targetProxy = CDCB76E6263C00D400709455 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDCB76CD263C00D400709455 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCB76CE263C00D400709455 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDCB76D2263C00D400709455 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCB76D3263C00D400709455 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDCB76EC263C00D400709455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDCB76ED263C00D400709455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDCB76EF263C00D400709455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8S45MBDY;
+				INFOPLIST_FILE = EgoBooth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ion6.EgoBooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDCB76F0263C00D400709455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8S45MBDY;
+				INFOPLIST_FILE = EgoBooth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ion6.EgoBooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDCB76F2263C00D400709455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8S45MBDY;
+				INFOPLIST_FILE = EgoBoothTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ion6.EgoBoothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EgoBooth.app/EgoBooth";
+			};
+			name = Debug;
+		};
+		CDCB76F3263C00D400709455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8S45MBDY;
+				INFOPLIST_FILE = EgoBoothTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ion6.EgoBoothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EgoBooth.app/EgoBooth";
+			};
+			name = Release;
+		};
+		CDCB76F5263C00D400709455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8S45MBDY;
+				INFOPLIST_FILE = EgoBoothUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ion6.EgoBoothUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EgoBooth;
+			};
+			name = Debug;
+		};
+		CDCB76F6263C00D400709455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3V8S45MBDY;
+				INFOPLIST_FILE = EgoBoothUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ion6.EgoBoothUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EgoBooth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDCB76BF263C00D400709455 /* Build configuration list for PBXProject "EgoBooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCB76EC263C00D400709455 /* Debug */,
+				CDCB76ED263C00D400709455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCB76EE263C00D400709455 /* Build configuration list for PBXNativeTarget "EgoBooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCB76EF263C00D400709455 /* Debug */,
+				CDCB76F0263C00D400709455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCB76F1263C00D400709455 /* Build configuration list for PBXNativeTarget "EgoBoothTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCB76F2263C00D400709455 /* Debug */,
+				CDCB76F3263C00D400709455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCB76F4263C00D400709455 /* Build configuration list for PBXNativeTarget "EgoBoothUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCB76F5263C00D400709455 /* Debug */,
+				CDCB76F6263C00D400709455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDCB76BC263C00D400709455 /* Project object */;
+}
