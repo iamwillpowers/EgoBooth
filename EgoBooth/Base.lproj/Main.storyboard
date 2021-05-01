@@ -13,7 +13,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EgoBooth" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GLKView">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MTKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -51,6 +51,7 @@
                     </view>
                     <connections>
                         <outlet property="cameraButton" destination="Ygo-DP-glX" id="vre-L6-fmi"/>
+                        <outlet property="metalView" destination="8bC-Xf-vdC" id="DWm-sJ-Xdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -12,16 +12,16 @@ import UIKit
 
 final class CameraFeed: NSObject {
 
-    var videoTextureCache: CVOpenGLESTextureCache?
-    private var rgbaTexture: CVOpenGLESTexture?
+    var videoTextureCache: CVMetalTextureCache?
+    private var rgbaTexture: CVMetalTexture?
     private var captureSession:AVCaptureSession?
     private var captureDevice:AVCaptureDevice?
     private var videoOutput:AVCaptureVideoDataOutput?
     private var cameraPosition: AVCaptureDevice.Position = .front
-    private weak var context: EAGLContext?
+    private weak var metalDevice: MTLDevice?
 
-    init(context: EAGLContext) {
-        self.context = context
+    init(metalDevice: MTLDevice) {
+        self.metalDevice = metalDevice
     }
     
     func startCapture() {
@@ -79,15 +79,16 @@ final class CameraFeed: NSObject {
             return
         }
 
-        guard let ctxt = self.context else {
+        guard let mtlDevice = self.metalDevice else {
             return
         }
-        
-        let status = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault,
-                                                  nil,
-                                                  ctxt,
-                                                  nil,
-                                                  &videoTextureCache)
+
+        let status = CVMetalTextureCacheCreate(kCFAllocatorDefault,
+                                               nil,
+                                               mtlDevice,
+                                               nil,
+                                               &videoTextureCache)
+
         guard status == kCVReturnSuccess else {
             assertionFailure("Couldn't create video cache! \(status)")
             return
@@ -144,33 +145,30 @@ extension CameraFeed : AVCaptureVideoDataOutputSampleBufferDelegate {
         let width = CVPixelBufferGetWidth(pixelBuffer)
         let height = CVPixelBufferGetHeight(pixelBuffer)
 
-        guard videoTextureCache != nil else {
+        guard let textureCache = videoTextureCache else {
             assertionFailure("No video texture cache")
             return
         }
 
         rgbaTexture = nil
         // Periodic texture cache flush every frame
-        CVOpenGLESTextureCacheFlush(videoTextureCache!, 0)
+        CVMetalTextureCacheFlush(textureCache, 0)
 
-        // CVOpenGLESTextureCacheCreateTextureFromImage will create GLES texture
+        // CVMetalTextureCacheCreateTextureFromImage will create Metal texture
         // optimally from CVImageBufferRef.
         glActiveTexture(GLenum(GL_TEXTURE2))
-        let status = CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault,
-                                                                  videoTextureCache!,
-                                                                  pixelBuffer,
-                                                                  nil,
-                                                                  GLenum(GL_TEXTURE_2D),
-                                                                  GL_RGBA,
-                                                                  GLsizei(width),
-                                                                  GLsizei(height),
-                                                                  GLenum(GL_BGRA),
-                                                                  GLenum(GL_UNSIGNED_BYTE),
-                                                                  0,
-                                                                  &rgbaTexture)
+        let status = CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault,
+                                                               textureCache,
+                                                               pixelBuffer,
+                                                               nil,
+                                                               .rgba32Uint,// possibly .rgba8Uint
+                                                               width,
+                                                               height,
+                                                               0,
+                                                               &rgbaTexture)
 
         guard status == kCVReturnSuccess else {
-            assertionFailure("Error at CVOpenGLESTextureCacheCreateTextureFromImage \(status)")
+            assertionFailure("Error at CVMetalTextureCacheCreateTextureFromImage \(status)")
             return
         }
 

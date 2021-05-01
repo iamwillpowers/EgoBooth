@@ -29,6 +29,8 @@
 		CDCB7715263C012700709455 /* CameraFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB7706263C012700709455 /* CameraFeed.swift */; };
 		CDCB7717263C01B900709455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCB7716263C01B900709455 /* Assets.xcassets */; };
 		CDCB7719263C79CA00709455 /* GlitchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB7718263C79CA00709455 /* GlitchTableViewController.swift */; };
+		CDCB771B263D065C00709455 /* Fisheye.metal in Sources */ = {isa = PBXBuildFile; fileRef = CDCB771A263D065C00709455 /* Fisheye.metal */; };
+		CDCB771D263D0ADF00709455 /* Array+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB771C263D0ADF00709455 /* Array+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		CDCB7706263C012700709455 /* CameraFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFeed.swift; sourceTree = "<group>"; };
 		CDCB7716263C01B900709455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDCB7718263C79CA00709455 /* GlitchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlitchTableViewController.swift; sourceTree = "<group>"; };
+		CDCB771A263D065C00709455 /* Fisheye.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Fisheye.metal; sourceTree = "<group>"; };
+		CDCB771C263D0ADF00709455 /* Array+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 				CDCB76D2263C00D400709455 /* LaunchScreen.storyboard */,
 				CDCB76D5263C00D400709455 /* Info.plist */,
 				CDCB7716263C01B900709455 /* Assets.xcassets */,
+				CDCB771E263D0AF600709455 /* Extensions */,
 				CDCB76F7263C012700709455 /* Shaders */,
 			);
 			path = EgoBooth;
@@ -161,6 +166,7 @@
 		CDCB76F7263C012700709455 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
+				CDCB771A263D065C00709455 /* Fisheye.metal */,
 				CDCB76F8263C012700709455 /* edgehighlights.fsh */,
 				CDCB76F9263C012700709455 /* infrared.fsh */,
 				CDCB76FA263C012700709455 /* points.fsh */,
@@ -176,6 +182,14 @@
 				CDCB7704263C012700709455 /* matrix.fsh */,
 			);
 			path = Shaders;
+			sourceTree = "<group>";
+		};
+		CDCB771E263D0AF600709455 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB771C263D0ADF00709455 /* Array+Helpers.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,8 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDCB771B263D065C00709455 /* Fisheye.metal in Sources */,
 				CDCB7715263C012700709455 /* CameraFeed.swift in Sources */,
 				CDCB7714263C012700709455 /* ViewController.swift in Sources */,
+				CDCB771D263D0ADF00709455 /* Array+Helpers.swift in Sources */,
 				CDCB76C8263C00D400709455 /* AppDelegate.swift in Sources */,
 				CDCB7719263C79CA00709455 /* GlitchTableViewController.swift in Sources */,
 			);
